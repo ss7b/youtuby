@@ -1,0 +1,37 @@
+.card:hover {
+  transform: translateY(0);
+}
+.watch-icons {
+  position: absolute;
+  bottom: 0;
+}
+.watch-icons:hover {
+  cursor: pointer;
+}
+.form-control:focus {
+  box-shadow: none;
+}
+.card-inner {
+  display: none;
+}
+.public-comment .card .btn {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+  color: #fff;
+}
+.public-comment .card .btn:hover {
+  background-color: #d45bd4;
+}
+.liked {
+  background-color: crimson !important;
+  border: crimson !important;
+}
+.liked:hover {
+  background-color: rgb(235, 39, 78) !important;
+  border: rgb(235, 39, 78) !important;
+}
+@media (max-width: 1079px) {
+  .watch-page .card-block .btn {
+    margin-bottom: 5px !important;
+  }
+}

@@ -1,0 +1,47 @@
+.righ-col {
+  background-color: #fff;
+  height: 570px;
+  /* margin-top: 15px; */
+  border-radius: 5px;
+}
+.list-group-item.active {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+}
+.card-icon .remove {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  font-size: 20px;
+  color: #524f4f;
+  cursor: pointer;
+}
+time {
+  left: 10px;
+}
+@media (min-width: 772px) and (max-width: 1199px) {
+  .card .card-body .chanal-image {
+    display: block;
+    margin-top: 10px;
+  }
+  .card .card-body .chanal-image img {
+    margin-right: 0 !important;
+  }
+  .card .card-body h4 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+@media (max-width: 991px) {
+  .card {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .card-icon img {
+    width: 100%;
+  }
+}

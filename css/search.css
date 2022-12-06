@@ -1,0 +1,34 @@
+.filter-icon {
+  cursor: pointer;
+}
+.filters-col {
+  display: none;
+}
+
+input:checked + span {
+  color: var(--main-color);
+}
+time {
+  left: 5px;
+}
+@media (max-width: 767px) {
+  .card-icon img {
+    width: 100%;
+  }
+}
+@media (min-width: 772px) and (max-width: 991px) {
+  .card .card-body .chanal-image {
+    display: block;
+    margin-top: 10px;
+  }
+  .card .card-body .chanal-image img {
+    margin-right: 0 !important;
+  }
+  .card .card-body h4 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

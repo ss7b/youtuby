@@ -1,0 +1,184 @@
+@font-face {
+  font-family: "cairoFont";
+  src: url(../fonts/Cairo-Regular.ttf);
+}
+:root {
+  --main-color: #bf40bf;
+}
+/* التنسيقات الاساسيه او الثابته */
+body {
+  font-family: "cairoFont", Arial, sans-serif;
+  background-color: #fafafa;
+}
+a {
+  color: #000;
+  list-style: none;
+}
+button {
+  background-color: transparent !important;
+  color: #bf40bf !important;
+  border-color: #bf40bf !important;
+}
+button:hover {
+  color: #fff !important;
+  background-color: #bf40bf !important;
+}
+/*  نهاية التنسيقات الاساسيه او الثابته */
+
+.top-minu .navbar-light {
+  background-color: #fff !important;
+}
+.video-icon {
+  background-color: var(--main-color) !important ;
+  color: #fff;
+  border-radius: 5px;
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .active > .nav-link {
+  color: #fff;
+  background-color: #bf40bf;
+}
+.login {
+  color: var(--main-color) !important;
+}
+.modal .modal-header .close:hover {
+  color: var(--main-color) !important;
+  background-color: transparent !important;
+}
+input.form-control:focus,
+button:focus {
+  box-shadow: none !important;
+}
+.card {
+  transition: all 0.3s ease;
+}
+.card:hover {
+  transform: translatey(-5px);
+}
+.card-icon {
+  position: relative;
+}
+.card .card-title {
+  height: 50px;
+  overflow: hidden;
+}
+.card .card-body p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card-body {
+  min-width: 0;
+}
+time {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  background: #00000061;
+  color: #fff;
+  padding: 1px 5px;
+}
+.card-icon .play-icon {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  display: none;
+  transition: all 0.3s ease-in;
+}
+.card-icon:hover .play-icon {
+  display: inline;
+}
+.top-minu .fa-bars {
+  cursor: pointer;
+}
+.navbar .search-icon {
+  color: #bf40bf;
+  cursor: pointer;
+  padding: 15px 10px;
+  position: absolute;
+  top: 15px;
+  left: 132px;
+  display: none;
+}
+.navbar .search-icon:hover {
+  color: #fff;
+  background-color: #bf40bf;
+}
+.search-input {
+  position: fixed;
+  top: 72px;
+  left: 0;
+  border: none;
+  padding: 6px 23px;
+  height: 60px;
+  background-color: #efeeee;
+  display: none;
+  z-index: 1;
+}
+.search-input:focus {
+  background-color: #efeeee;
+}
+/* side bar */
+.sidebar {
+  position: fixed;
+  z-index: 4;
+  right: -17rem;
+  transition: all 0.5s ease-in-out;
+  height: 100%;
+  background-color: #fff;
+  overflow: hidden;
+  padding-bottom: 100px;
+}
+.sidebar:hover {
+  overflow-y: scroll;
+}
+.sidebar::-webkit-scrollbar {
+  background-color: rgb(207, 196, 196);
+  width: 8px;
+}
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: rgb(184, 174, 174);
+  width: 8px;
+}
+.purple {
+  color: var(--main-color);
+}
+.list-group-item {
+  width: 17rem;
+}
+.list-group-item:hover {
+  color: #fff;
+  background-color: var(--main-color);
+}
+.list-group-item:hover .purple {
+  color: #fff;
+}
+#wrap.toggled .sidebar {
+  right: 0rem;
+}
+.layer {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+  display: none;
+}
+/* side bar end */
+
+@media (max-width: 1119px) {
+  /*إخفاء حقل البحث الموجود في القائمة العلوية*/
+  .navbar .collapse .form-inline {
+    display: none;
+  }
+  /*إظهار أيقونة البحث*/
+  .navbar .search-icon {
+    display: inline;
+  }
+}
+@media (min-width: 1119px) {
+  .search-input {
+    display: none !important;
+  }
+}
